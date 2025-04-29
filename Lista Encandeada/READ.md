@@ -81,4 +81,4 @@ Lista ordenada: 5 -> 10 -> 15 -> 20
 
 - **Disciplina:** Estrutura de Dados
 - **Professor(a):** Kadidja
-- **Semestre:** 3º semestre de 2025
+- **Semestre:** 2º semestre de 2025
