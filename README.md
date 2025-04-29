@@ -63,5 +63,7 @@ Guilherme Pereira Sousa De Mmoura
 
 Email: gmoura@cs.udf.edu.br
 
+Link Colab: https://colab.research.google.com/drive/1jZ0Pa6IUOyRKaHEf-3e-ZmfWeyjZAsf9?usp=sharing
+
 
 
