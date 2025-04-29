@@ -61,10 +61,9 @@ Tem uma ideia legal? Abra uma issue!
 Quer expandir o conteúdo? Bora!
 
 🧑‍💻 Autor
-João Gabriel Pereira
-📎 GitHub: @joaogbpereira
+Guilherme Pereira Sousa de Moura
+📎 GitHub: @guiga3006
 
-Email: joaoaraujo04@cs.udf.edu.br
-
+Email: gmoura@cs.udf.edu.br
 
 
