@@ -68,5 +68,5 @@ Esses três conceitos — **fila**, **pilha** e **lista** — são fundamentais 
 
 ---
 
-Aluno -> JOÃO GABRIEL PEREIRA DE ARAUJO
+Aluno -> Guilherme Perira Sousa De Moura
 Curso -> Engenharia de Software
