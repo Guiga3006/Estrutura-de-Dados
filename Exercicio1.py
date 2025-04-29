@@ -1,18 +1,10 @@
-numero1 = '123-4'
-titular1 = "João"
-saldo1 = 120.0
-limite1 = 1000.0
+# 1. Inverter a ordem dos IDs das naves alienígenas (com lista)
 
-numero2 = '123-5'
-titular2 = "José"
-saldo2 = 200.0
-limite2 = 1000.0
+# Lista original de IDs das naves
+ids_naves = [101, 202, 303, 404, 505]
 
-# Dicionário que representa uma conta bancária
-conta = {"numero": '123-4', "titular": "João", "saldo": 120.0, "limite": 1000.0}
+# Invertendo a ordem usando slicing
+ids_invertidos = ids_naves[::-1]
 
-# Imprimindo os valores do dicionário
-print(f'O número da conta é: {conta["numero"]}')
-print(f'O titular da conta é: {conta["titular"]}')
-print(f'O saldo da conta é: R${conta["saldo"]}')
-print(f'O limite da conta é: R${conta["limite"]}')
+print("Ordem original:", ids_naves)
+print("Ordem invertida:", ids_invertidos)

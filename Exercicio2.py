@@ -1,6 +1,21 @@
-conta2 = {"numero": '123-5', "titular": "José", "saldo": 200.0, "limite": 1000.0}
+# 2. Simular uma fila de prioridade para tarefas da expedição espacial
 
-print(f'O número da conta é: {conta2["numero"]}')
-print(f'O titular da conta é: {conta2["titular"]}')
-print(f'O saldo da conta é: R${conta2["saldo"]}')
-print(f'O limite da conta é: R${conta2["limite"]}')
+import heapq
+
+# Lista de tarefas com prioridade (quanto menor o número, maior a prioridade)
+# Cada tupla tem (prioridade, descrição)
+tarefas = [
+    (3, "Recolher amostras"),
+    (1, "Consertar nave"),
+    (2, "Estabelecer comunicação com base"),
+    (4, "Explorar nova caverna")
+]
+
+# Transformar a lista numa fila de prioridade (min-heap)
+heapq.heapify(tarefas)
+
+# Simulando execução das tarefas por ordem de prioridade
+print("Execução das tarefas em ordem de prioridade:")
+while tarefas:
+    prioridade, tarefa = heapq.heappop(tarefas)
+    print(f"- {tarefa} (prioridade {prioridade})")

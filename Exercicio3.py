@@ -1,29 +1,21 @@
-# Função para criar uma conta
-def cria_conta(numero, titular, saldo, limite):
-    conta = {"numero": numero, "titular": titular, "saldo": saldo, "limite": limite}
-    return conta
+# 3. Verificar se uma sequência de parênteses está balanceada (com pilha)
 
-# Função para depositar um valor na conta
-def deposita(conta, valor):
-    if valor > 0:
-        conta['saldo'] += valor
-        print(f"Depósito de R${valor} realizado. Novo saldo: R${conta['saldo']}")
-    else:
-        print("Valor de depósito inválido. O valor deve ser positivo.")
+def esta_balanceado(sequencia):
+    pilha = []
+    for char in sequencia:
+        if char == '(':
+            pilha.append(char)
+        elif char == ')':
+            if not pilha:
+                return False  # Fechou sem abrir
+            pilha.pop()  # Fecha um parêntese aberto
+    return len(pilha) == 0  # Se não sobrou nenhum, está balanceado
 
-# Função para sacar um valor da conta
-def sacar(conta, valor):
-    if valor > 0:
-        if conta['saldo'] >= valor:
-            conta['saldo'] -= valor
-            print(f"Saque de R${valor} realizado. Novo saldo: R${conta['saldo']}")
-        else:
-            print("Saldo insuficiente para realizar o saque.")
-    else:
-        print("Valor de saque inválido. O valor deve ser positivo.")
+# Testes
+codigo1 = "(()())"
+codigo2 = "(()"
+codigo3 = "())("
 
-def extrato(conta):
-    print(f"Conta: {conta['numero']}")
-    print(f"Titular: {conta['titular']}")
-    print(f"Saldo: R${conta['saldo']}")
-    print(f"Limite: R${conta['limite']}")
+print(f"{codigo1} -> Balanceado? {esta_balanceado(codigo1)}")
+print(f"{codigo2} -> Balanceado? {esta_balanceado(codigo2)}")
+print(f"{codigo3} -> Balanceado? {esta_balanceado(codigo3)}")
