@@ -1,7 +1,18 @@
-# Criando um vetor com os valores pedidos
-vetor = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+numero1 = '123-4'
+titular1 = "João"
+saldo1 = 120.0
+limite1 = 1000.0
 
-# Mostrando os valores do vetor
-print("Valores do vetor:")
-for i in range(10):
-    print(vetor[i], end=' ')
+numero2 = '123-5'
+titular2 = "José"
+saldo2 = 200.0
+limite2 = 1000.0
+
+# Dicionário que representa uma conta bancária
+conta = {"numero": '123-4', "titular": "João", "saldo": 120.0, "limite": 1000.0}
+
+# Imprimindo os valores do dicionário
+print(f'O número da conta é: {conta["numero"]}')
+print(f'O titular da conta é: {conta["titular"]}')
+print(f'O saldo da conta é: R${conta["saldo"]}')
+print(f'O limite da conta é: R${conta["limite"]}')

@@ -1,19 +1,29 @@
-# Vetor com 10 números positivos
-vetor = [5, 8, 12, 3, 7, 9, 11, 4, 6, 10]
+# Função para criar uma conta
+def cria_conta(numero, titular, saldo, limite):
+    conta = {"numero": numero, "titular": titular, "saldo": saldo, "limite": limite}
+    return conta
 
-# Mostrando o vetor
-print("Vetor:", vetor)
+# Função para depositar um valor na conta
+def deposita(conta, valor):
+    if valor > 0:
+        conta['saldo'] += valor
+        print(f"Depósito de R${valor} realizado. Novo saldo: R${conta['saldo']}")
+    else:
+        print("Valor de depósito inválido. O valor deve ser positivo.")
 
-# Pedindo o número para buscar
-numero = int(input("Digite um número para buscar: "))
+# Função para sacar um valor da conta
+def sacar(conta, valor):
+    if valor > 0:
+        if conta['saldo'] >= valor:
+            conta['saldo'] -= valor
+            print(f"Saque de R${valor} realizado. Novo saldo: R${conta['saldo']}")
+        else:
+            print("Saldo insuficiente para realizar o saque.")
+    else:
+        print("Valor de saque inválido. O valor deve ser positivo.")
 
-# Procurando o número
-achou = False
-for i in range(10):
-    if vetor[i] == numero:
-        print(f"O número {numero} está na posição {i}")
-        achou = True
-        break
-
-if not achou:
-    print(f"O número {numero} não está no vetor")
+def extrato(conta):
+    print(f"Conta: {conta['numero']}")
+    print(f"Titular: {conta['titular']}")
+    print(f"Saldo: R${conta['saldo']}")
+    print(f"Limite: R${conta['limite']}")

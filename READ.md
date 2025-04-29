@@ -1,55 +1,51 @@
-# 🧠 Exercícios de Lógica de Programação em Python
+<h1 align="center">🐍 Explorando o Básico do Python</h1>
 
-![Badge](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
-![Badge](https://img.shields.io/badge/Google%20Colab-Notebook-yellow?style=flat-square)
+<p align="center">
+  <img src="https://media0.giphy.com/media/6yU5mAiUaJZFj8lpPn/giphy.gif?cid=6c09b952737vsvuhx5kjfnaamcbjguavvzx86z7brjinevd0&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" width="450" alt="Gojo Satoru"/>
+</p>
 
-> Conjunto de exercícios práticos de lógica de programação em Python, desenvolvidos no Google Colab. Ideal para iniciantes que desejam aprimorar suas habilidades em estruturas condicionais, loops e manipulação de dados.
 
----
 
-## 📚 Conteúdo
+<p align="center">
+  Este repositório contém uma série de exercícios introdutórios em Python, abordando conceitos fundamentais como variáveis, tipos de dados, estruturas de controle e manipulação de listas. É um excelente ponto de partida para quem está começando na programação com Python.
+</p>
 
-- ✅ Variáveis e Tipos de Dados
-- 🔁 Estruturas de Repetição (`for`, `while`)
-- 🔀 Condicionais (`if`, `elif`, `else`)
-- 🧮 Operadores Lógicos e Relacionais
-- 📦 Listas e Dicionários
-- 🧪 Funções e Escopo de Variáveis
 
----
+✨ Conteúdo dos Exercícios
+Apresentação Pessoal: Utilização de variáveis para criar uma mensagem personalizada.
 
-## 🚀 Como Executar
+Cálculo de Média: Cálculo da média de uma lista de números.
 
-1. Acesse o notebook no Google Colab:
-   👉 [Clique aqui para abrir o notebook](https://colab.research.google.com/drive/1xSDgTxeIbvvrkghXPXxXDnb98OoYuMyP?usp=sharing)
+Comparação de Gastos: Análise de listas para determinar quem gastou mais.
 
-2. Execute as células sequencialmente para acompanhar os exercícios.
+Maior e Menor Palavra: Identificação da maior e menor palavra em uma lista.
 
----
-
-## 💡 Exemplo de Exercício
-
-```python
-# Verifica se um número é par ou ímpar
-numero = int(input("Digite um número: "))
-if numero % 2 == 0:
-    print("O número é par.")
-else:
-    print("O número é ímpar.")
-
-🎯 Objetivos
-Praticar a lógica de programação com exercícios simples e objetivos.
-
-Desenvolver o raciocínio algorítmico para resolução de problemas.
-
-Familiarizar-se com a sintaxe e funcionalidades básicas do Python.
+Segundo Maior Valor: Determinação do segundo maior número em uma lista.​
+Hashtag Treinamentos
++1
+Asimov Academy
++1
+Asimov Academy
 
 🛠️ Tecnologias Utilizadas
-Python 3.11
+Python 3.x
 
-Google Colab
+Google Colab​
+Wikipédia, a enciclopédia livre
 
-📌 Observações
-Os exercícios são voltados para iniciantes e não requerem conhecimento prévio avançado.
+📚 Como Executar
+Acesse o notebook no Google Colab: Link para o Notebook
 
-Sinta-se à vontade para clonar o repositório e adaptar os exercícios conforme sua necessidade.
+Clique em "Executar tudo" para rodar todos os exercícios.​
+
+🚀 Próximos Passos
+Explorar estruturas de repetição (for, while).
+
+Introdução a funções e módulos.
+
+Manipulação de arquivos e exceções.​
+
+🤝 Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests com sugestões e melhorias.​
+
+Este README foi elaborado para proporcionar uma visão clara e atrativa dos exercícios realizados, facilitando a compreensão e incentivando a prática contínua.

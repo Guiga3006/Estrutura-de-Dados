@@ -1,23 +1,43 @@
-# Programa que calcula a soma das linhas de uma matriz 3x3
+class Pessoa:
+    def __init__(self, nome, idade, peso, altura):
+        """
+        Args:
+            nome (str): O nome da pessoa.
+            idade (int): A idade da pessoa.
+            peso (float): O peso da pessoa.
+            altura (float): A altura da pessoa em centímetros.
+        """
+        self.nome = nome
+        self.idade = idade
+        self.peso = peso
+        self.altura = altura
 
-# Criando a matriz 3x3 com números decimais simples
-matriz = [
-    [1.5, 2.3, 3.7],
-    [4.2, 5.0, 6.8],
-    [7.1, 8.4, 9.2]
-]
+    def envelhecer(self, anos=1):
+        for _ in range(anos):
+            if self.idade < 21:
+                self.altura += 0.5  # aumento de 0.5 cm por ano (em vez de 0.05, que é muito pouco)
+            self.idade += 1
 
-print("Matriz 3x3:")
-for linha in matriz:
-    print(linha)
+    def engordar(self, quilos):
+        self.peso += quilos
 
-# Calculando as somas
-soma_linha1 = matriz[0][0] + matriz[0][1] + matriz[0][2]
-soma_linha2 = matriz[1][0] + matriz[1][1] + matriz[1][2]
-soma_linha3 = matriz[2][0] + matriz[2][1] + matriz[2][2]
+    def emagrecer(self, quilos):
+        self.peso -= quilos
 
-# Mostrando os resultados
-print("\nSomas das linhas:")
-print(f"Linha 1: {matriz[0]} = {soma_linha1}")
-print(f"Linha 2: {matriz[1]} = {soma_linha2}")
-print(f"Linha 3: {matriz[2]} = {soma_linha3}")
+    def crescer(self, centimetros):
+        self.altura += centimetros
+
+
+# Criando uma instância
+pessoa1 = Pessoa("Alice", 18, 60.0, 160.0)
+
+print(f"Nome: {pessoa1.nome}, Idade: {pessoa1.idade}, Peso: {pessoa1.peso}kg, Altura: {pessoa1.altura}cm")
+
+# Aplicando mudanças
+pessoa1.envelhecer(3)
+pessoa1.engordar(2.5)
+pessoa1.emagrecer(1.0)
+pessoa1.crescer(1.0)
+
+# Imprimindo após mudanças
+print(f"Nome: {pessoa1.nome}, Idade: {pessoa1.idade}, Peso: {pessoa1.peso}kg, Altura: {pessoa1.altura}cm")

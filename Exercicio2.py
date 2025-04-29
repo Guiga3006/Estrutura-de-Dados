@@ -1,14 +1,6 @@
-# Criando a matriz com as letras pedidas
-matriz = [
-    ['a', 'b', 'c', 'd'],
-    ['e', 'f', 'g', 'h'],
-    ['i', 'j', 'k', 'l'],
-    ['m', 'n', 'o', 'p']
-]
+conta2 = {"numero": '123-5', "titular": "José", "saldo": 200.0, "limite": 1000.0}
 
-# Mostrando a matriz
-print("Matriz de letras:")
-for linha in range(4):
-    for coluna in range(4):
-        print(matriz[linha][coluna], end=' ')
-    print()  # Pula linha após cada linha da matriz
+print(f'O número da conta é: {conta2["numero"]}')
+print(f'O titular da conta é: {conta2["titular"]}')
+print(f'O saldo da conta é: R${conta2["saldo"]}')
+print(f'O limite da conta é: R${conta2["limite"]}')
